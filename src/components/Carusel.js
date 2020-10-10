@@ -70,7 +70,7 @@ const Carusel = (props) => {
   });
 
   return (
-    <Carousel className={style.arrows}
+    <Carousel 
       activeIndex={activeIndex}
       next={next}
       previous={previous}

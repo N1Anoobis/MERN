@@ -7,7 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Container
+  Container,
 } from 'reactstrap';
 
 class NavBar extends Component {
@@ -18,7 +18,7 @@ class NavBar extends Component {
 
 toggle = () => {
   this.setState({
-    isOpen: !this.state.isOpen
+    isOpen: !this.state.isOpen,
   });
 }
 
@@ -27,7 +27,17 @@ render() {
 
     <div>
       <Navbar color="dark" dark expand="sm" className="mb-5">
-          
+        <Container>
+          <NavbarBrand >MongoDB Express React Node.js</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} ></NavbarToggler>
+          <Collapse isOpen={this.state.isOpen} navbar></Collapse>
+          <Nav className="ml-auto" navbar>
+            <NavItem>
+              <NavLink href="https://slawomirkaczynski.netlify.app">Portfolio</NavLink>
+            </NavItem>
+          </Nav>
+
+        </Container>
       </Navbar>
     </div>
 

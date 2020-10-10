@@ -9,6 +9,7 @@
     "axios": "^0.20.0",
     "babel-eslint": "10",
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.2",
     "concurrently": "^5.3.0",
     "cors": "^2.8.5",
     "eslint": "6.x",
@@ -17,7 +18,11 @@
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.3",
+    "reactstrap": "^8.6.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

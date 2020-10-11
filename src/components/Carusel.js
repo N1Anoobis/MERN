@@ -18,8 +18,7 @@ const Carusel = (props) => {
 
   useEffect (() => {
     props.getCars();
- 
-  });
+  },[]);
 
   const items = [
     {

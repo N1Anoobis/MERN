@@ -12,11 +12,7 @@ export const getCars = () => dispatch => {
       }));
 };
 
-const initialState = {
-  cars:[],
-};
-
-export default function(state = initialState, action) {
+export default function(state, action) {
   switch(action.type) {
     case GET_ITEMS:
       return {
